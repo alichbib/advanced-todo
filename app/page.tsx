@@ -4,14 +4,14 @@ import { useAppSelector, useAppDispatch } from '@/lib/store';
 import {
   increment,
   decrement,
-  incrementByAmount,
   setMessage,
+  incrementByAmount,
 } from '@/lib/slices/exampleSlice';
 
 export default function Home() {
   const { value, message } = useAppSelector((state) => state.example);
   const dispatch = useAppDispatch();
-  
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <main className="w-full max-w-2xl mx-auto p-8">
